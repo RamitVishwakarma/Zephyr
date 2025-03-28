@@ -39,7 +39,9 @@ const Footer = ({ setShowAnswer }) => {
               value={question}
             />
             {loading ? (
-              <Loader />
+              <div className="absolute right-4 flex items-center justify-center">
+                <Loader />
+              </div>
             ) : (
               <button
                 type="submit"
